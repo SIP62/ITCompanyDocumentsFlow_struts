@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name="struts.devMode" value="true" />
+   <package name="helloworld" extends="struts-default">
+
+      <action name="login" class="by.bsuir.spp.actions.LoginAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/login.jsp</result>
+      </action>
+      
+      <action name="registration_form" class="by.bsuir.spp.actions.RegistrationFormAction" method="execute">
+         <result name="success">/jsp/registration.jsp</result>
+      </action>
+      
+      <action name="registrate" class="by.bsuir.spp.actions.RegistrateAction" method="execute">
+         <result name="success">/jsp/login.jsp</result>
+         <result name="error">/jsp/login.jsp</result>
+      </action>
+      
+      <action name="logout" class="by.bsuir.spp.actions.LogoutAction" method="execute">
+         <result name="success">/index.jsp</result>
+      </action>
+      
+      <action name="return_to_page" class="by.bsuir.spp.actions.ReturnToPageAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="employee_form" class="by.bsuir.spp.actions.EmployeeFormAction" method="execute">
+         <result name="success">/jsp/employeedataform.jsp</result>
+      </action>
+      
+      <action name="update_employee_data" class="by.bsuir.spp.actions.UpdateEmployeeDataAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="projects_list" class="by.bsuir.spp.actions.ProjectsListAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="project_data" class="by.bsuir.spp.actions.ProjectDataAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="client_employees" class="by.bsuir.spp.actions.ClientEmployeesAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="project_info" class="by.bsuir.spp.actions.ProjectInfoAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="project_form" class="by.bsuir.spp.actions.ProjectFormAction" method="execute">
+         <result name="success">/jsp/projectdataform.jsp</result>
+      </action>
+      
+      <action name="update_project" class="by.bsuir.spp.actions.UpdateProjectAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="change_executants_form" class="by.bsuir.spp.actions.ChangeExecutantsFormAction" method="execute">
+         <result name="success">/jsp/changeexecutantform.jsp</result>
+      </action>
+      
+      <action name="delete_executant" class="by.bsuir.spp.actions.DeleteExecutantAction" method="execute">
+         <result name="success">/jsp/changeexecutantform.jsp</result>
+         <result name="error">/jsp/changeexecutantform.jsp</result>
+      </action>
+      
+      <action name="add_executant" class="by.bsuir.spp.actions.AddExecutantAction" method="execute">
+         <result name="success">/jsp/changeexecutantform.jsp</result>
+         <result name="error">/jsp/changeexecutantform.jsp</result>
+      </action>
+      
+      <action name="employee_list" class="by.bsuir.spp.actions.EmployeeListAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="project_proposal_list" class="by.bsuir.spp.actions.ProjectProposalListAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+     
+      <action name="client_list" class="by.bsuir.spp.actions.ClientListAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="project_info_form" class="by.bsuir.spp.actions.ProjectInfoFormAction" method="execute">
+         <result name="success">/jsp/projectinfoform.jsp</result>
+      </action>
+      
+      <action name="employee_data" class="by.bsuir.spp.actions.EmployeeDataAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="project_proposal_view" class="by.bsuir.spp.actions.ProjectProposalViewAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="client_data" class="by.bsuir.spp.actions.ClientDataAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="client_form" class="by.bsuir.spp.actions.ClientFormAction" method="execute">
+         <result name="success">/jsp/clientdataform.jsp</result>
+      </action>
+      
+      <action name="add_client" class="by.bsuir.spp.actions.AddClientAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/addclientform.jsp</result>
+      </action>
+      
+      <action name="add_client_employee" class="by.bsuir.spp.actions.AddClientEmployeeAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="add_client_form" class="by.bsuir.spp.actions.AddClientFormAction" method="execute">
+         <result name="success">/jsp/addclientform.jsp</result>
+      </action>
+      
+      <action name="add_employee" class="by.bsuir.spp.actions.AddEmployeeAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/addemployeeform.jsp</result>
+      </action>
+      
+      <action name="add_employee_form" class="by.bsuir.spp.actions.AddEmployeeFormAction" method="execute">
+         <result name="success">/jsp/addemployeeform.jsp</result>
+      </action>
+      
+      <action name="add_project_info" class="by.bsuir.spp.actions.AddProjectInfoAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="add_project_proposal" class="by.bsuir.spp.actions.AddProjectProposalAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/projectproposalform.jsp</result>
+      </action>
+      
+      <action name="client_employee_form" class="by.bsuir.spp.actions.ClientEmployeeFormAction" method="execute">
+         <result name="success">/jsp/clientemployeeform.jsp</result>
+      </action>
+      
+      <action name="delete_user" class="by.bsuir.spp.actions.DeleteUserAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="project_proposal_form" class="by.bsuir.spp.actions.ProjectProposalFormAction" method="execute">
+         <result name="success">/jsp/projectproposalform.jsp</result>
+      </action>
+      
+      <action name="recruit_form" class="by.bsuir.spp.actions.RecruitFormAction" method="execute">
+         <result name="success">/jsp/recruitform.jsp</result>
+      </action>
+      
+      <action name="update_client_data" class="by.bsuir.spp.actions.UpdateClientDataAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/clientdataform.jsp</result>
+      </action>
+      
+      <action name="users_list" class="by.bsuir.spp.actions.UsersListAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+      </action>
+      
+      <action name="add_recruit" class="by.bsuir.spp.actions.AddRecruitAction" method="execute">
+         <result name="success">/jsp/userpage.jsp</result>
+         <result name="error">/jsp/recruitform.jsp</result>
+      </action>
+         
+   </package>
+
+</struts>
